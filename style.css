@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'segoe ui', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transfrom: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    text-align: center;
+    margin-buttom: 30px;
+}
+
+.foto profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-buttom: 20px;
+    object-fit: cover;
+}
+
+h1 {
+    color: #333;
+    font-size: 2em;
+    line-height: 1.4;
+}
+
+section {
+    margin-buttom: 30px;
+}
+
+h2 {
+    color: #667eea;
+    margin-buttom: 15px;
+    padding-buttom: 10px;
+    border-buttom: 2px solid #667eea;
+}
+
+.tentang-saya p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
