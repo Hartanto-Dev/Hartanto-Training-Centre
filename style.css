@@ -70,3 +70,43 @@ h2 {
     font-size: 1.1em;
 }
 
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 10px, 20px;
+    font-size: 0.95em;
+    transition: transfrom 0.3s ease;
+}
+
+.skill-item:hover {
+    transfrom: scale(1.05);
+}
+
+blockquote {
+    background: #f8f9fa;
+    padding: 20px;
+    border-left: 5px solid #667eea;
+    font-style: italic;
+    color: #555;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    color: #777;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.tanggal {
+    font-size: 0.85em;
+    margin: 5px;
+}
+
