@@ -1,61 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My  First</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card Sederhana</title>
+  <!-- Hubungkan file CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src=""https://via.placeholder.com/150"" alt="Foto Profile" class="foto-profile">
-            <h1>saya gabut</h1>
-        </header>
 
-        <button id="toggle-mode" title="Ganti Tema">
-            <span id="icon-icon">Ganti tema ni broo 🌙</span>
-        </button>
-        
-        <section class="tentang-saya">
-            <h2>Tentang saya</h2>
-            <p>Halo, nama saya gabut. Saya seorang pengembang web yang bersemangat dengan 
-            pengalaman dalam membangun aplikasi web yang responsif dan menarik. Saya memiliki 
-            keterampilan dalam HTML, CSS, dan JavaScript, serta pengalaman dengan berbagai framework
-             dan pustaka. Saya selalu berusaha untuk belajar hal-hal baru dan meningkatkan kemampuan 
-             saya dalam pengembangan web.</p>
-        </section>
-
-        <section class="Skill">
-            <h2>Yang Sedang Di Pelajari</h2>
-            <div class="skill-list">
-                <div class="skill-item">HTML</div>
-                <div class="skill-item">CSS</div>
-                <div class="skill-item">JavaScript</div>
-                <div class="skill-item">Git & Git Hub</div>
-                <div class="skill-item">Python (soon) </div>
-            </div>
-        </section>
-
-        <section class="motto">
-            <h2>Motto</h2>
-            <blockquote id="teks-motto">
-                <p>
-                    "Setiap programmer hebat dulunya adalah pemula yang tidak pernah menyerah"
-                </p>
-            </blockquote>
-            <button id="salin-motto"> Cihuy salin motton </button>
-        </section>
-
-        <footer>
-            <p>Dibuat dengan ❤️ oleh <span id="nama">Hartanto</span></p>
-            <p class="tanggal">Project pertama - <span id="tanggal"></span></p>
-            <p class="jam-digital"> jam nih mpruyyy <span id="jam"></span></p>
-        </footer>
-
-        
-
+  <!-- CARD 1: dengan gambar -->
+  <div class="card">
+    <img
+      class="card-image"
+      src="https://picsum.photos/seed/1/400/200"
+      alt="Gambar card"
+    />
+    <div class="card-body">
+      <h3 class="card-title">Judul Card</h3>
+      <p class="card-text">
+        Ini adalah deskripsi singkat dari card. Kamu bisa mengganti
+        teks ini dengan konten apa pun yang kamu mau.
+      </p>
+      <!-- Tombol dengan id untuk JS -->
+      <button class="card-button" id="btnCard1">Klik Saya</button>
     </div>
+  </div>
+
+  <!-- CARD 2: tanpa gambar + footer -->
+  <div class="card" style="margin-left: 24px;">
+    <div class="card-body">
+      <h3 class="card-title">Card Tanpa Gambar</h3>
+      <p class="card-text">
+        Card ini tidak memiliki gambar, cocok untuk konten teks murni.
+        Kamu bisa menambahkan elemen lain di sini.
+      </p>
+      <button class="card-button" id="btnCard2">Lihat Detail</button>
+    </div>
+    <div class="card-footer">
+      Diposting 2 jam yang lalu
+    </div>
+  </div>
+
+  <!-- Hubungkan file JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
